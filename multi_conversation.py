@@ -2,8 +2,10 @@ import openai
 
 '''
 Inspired by: https://www.haihai.ai/chatgpt-api/
-Tweaked by adding creativity portion to change temperature
-Also, fixed bug for input quitting string
+Changed by:
+    - Refactor code to have object oriented functions
+    - Add creativity portion to change temperature
+    - Fix bug for input quitting string
 '''
 
 openai.api_key = 'sk-yourapikey'
