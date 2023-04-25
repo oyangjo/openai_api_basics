@@ -5,7 +5,8 @@ import openai
 Inspired by Harrison Kinsley: https://twitter.com/Sentdex?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
 '''
 
-openai.api_key = 'sk-yourapikey'
+openai.api_key = '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'
+bot_type = "A sassy know it all that knows all the pokemons."
 
 class ChatBot:
     def __init__(self):
@@ -29,7 +30,6 @@ class ChatBot:
         self.chat_history = [x for x in self.chat_history[:2]]
 
     def main(self):
-        bot_type = "You are a joke bot. I will specify the subject matter in my messages, and you will reply with a joke that includes the subjects I mention in my messages. Reply only with jokes to further input. If you understand, say OK."
         self.chat_history = [
             {"role": "system", "content": bot_type}, {"role": "assistant", "content": "OK"}
             ]
